@@ -1,0 +1,61 @@
+.contact {
+  padding: 69px 33px 40px;
+  padding-top: 69px;
+  position: relative;
+}
+
+.caption {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--color-g8);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.text {
+  color: var(--color-g8);
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 24px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}
+
+.ellipse {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  .contact {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .caption {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 140%;
+    width: 547px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .ellipse {
+    top: -170px;
+  }
+}

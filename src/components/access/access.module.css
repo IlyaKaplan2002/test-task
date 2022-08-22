@@ -1,0 +1,107 @@
+.access {
+  padding: 30px 20px 0 20px;
+  backdrop-filter: blur(44px);
+  position: relative;
+  overflow: hidden;
+}
+
+.caption {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: var(--color-w1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 277px;
+  margin-bottom: 30px;
+}
+
+.accessImage {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 513px;
+  height: 277px;
+  position: absolute;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: var(--color-w1);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.accessButton {
+  width: 100%;
+  padding: 14px 0;
+}
+
+.ellipse {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .access {
+    padding: 0;
+    backdrop-filter: none;
+    background: none;
+    overflow: visible;
+    margin-bottom: 89px;
+  }
+
+  .caption {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .imageWrapper {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .accessImage {
+    position: static;
+    width: 562px;
+    height: auto;
+    transform: none;
+  }
+
+  .ellipse {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text {
+    width: 646px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .accessButton {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    z-index: 1;
+    position: relative;
+  }
+}

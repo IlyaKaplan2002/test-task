@@ -1,0 +1,26 @@
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--app-background-color);
+}
+
+.content-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.content {
+  position: relative;
+  flex: 1;
+  max-height: calc(100vh - var(--header-height));
+  display: flex;
+  overflow: hidden;
+}
+
+.pages-wrapper {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+}

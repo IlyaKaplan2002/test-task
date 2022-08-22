@@ -1,0 +1,95 @@
+.item {
+  border-radius: 10px;
+  background: var(--color-b8);
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.imageWrapper {
+  position: relative;
+  height: 275px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.itemImage {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.content {
+  padding: 17px 20px 13px 20px;
+}
+
+.topWrapper {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.itemIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 32px;
+}
+
+.name {
+  color: var(--color-w1);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.position {
+  color: var(--color-w1);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  opacity: 0.5;
+}
+
+.bottomWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: fit-content;
+  margin: 0;
+}
+
+.socItem:not(:last-child) {
+  margin-right: 13px;
+}
+
+.socLink {
+  display: block;
+  color: var(--color-w1);
+  height: 20px;
+}
+
+.projectLink {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: var(--color-gr9);
+}
+
+@media screen and (min-width: 1280px) {
+  .item:not(:last-child) {
+    margin: 0;
+  }
+}

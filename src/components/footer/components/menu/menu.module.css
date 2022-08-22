@@ -1,0 +1,29 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+}
+
+.link {
+  color: var(--sidebar-submenu-text-color);
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.disabled {
+  color: var(--menu-item-disabled-color);
+  cursor: not-allowed;
+}
+
+.soon {
+  margin-left: 4px;
+  color: var(--menu-item-disabled-color);
+}
+
+.link:not(.disabled):hover,
+.link:not(.disabled).active {
+  color: var(--sidebar-submenu-hover-text-color);
+}

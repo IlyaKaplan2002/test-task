@@ -1,0 +1,146 @@
+.hero {
+  padding: 30px 20px 50px 20px;
+  overflow: hidden;
+  max-width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.heroEllipses {
+  position: absolute;
+  top: -500px;
+  right: -700px;
+  z-index: -1;
+}
+
+.captionHeader {
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--color-w1);
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.captionGreen {
+  display: block;
+  color: var(--color-gr2);
+}
+
+.subCaption {
+  color: var(--color-w1);
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.heroImage {
+  width: 257px;
+  height: 272px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.eventCaption {
+  margin-left: 10px;
+  margin-bottom: 13px;
+  color: var(--color-w1);
+  font-weight: 500;
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.eventCount {
+  opacity: 0.5;
+  font-weight: 500;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-gr2);
+  margin-bottom: 7px;
+}
+
+.progressBar {
+  background: var(--color-b22);
+  opacity: 0.7;
+  border-radius: 40px;
+  width: 77.5%;
+  height: 3px;
+  margin-left: 10px;
+  margin-bottom: 37px;
+}
+
+.progress {
+  background: var(--color-gr8);
+  box-shadow: 0px 0px 5px rgba(135, 246, 150, 0.6);
+  border-radius: 40px;
+  height: 3px;
+}
+
+.eventButton {
+  width: 100%;
+  padding: 14px 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    border-radius: 16px;
+    padding: 35px 441px 35px 50px;
+    margin-bottom: 10px;
+  }
+
+  .heroEllipses {
+    top: -600px;
+    right: -900px;
+  }
+
+  .captionHeader {
+    font-size: 48px;
+    line-height: 46px;
+    text-align: left;
+  }
+
+  .captionGreen {
+    display: inline;
+  }
+
+  .subCaption {
+    font-size: 18px;
+    line-height: 33px;
+    text-align: left;
+    margin-bottom: 27px;
+  }
+
+  .heroImage {
+    width: 514px;
+    height: 544px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .eventCaption {
+    margin-left: 0;
+  }
+
+  .eventCount {
+    margin-left: 0;
+  }
+
+  .progressBar {
+    width: 248px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .eventButton {
+    width: 188px;
+    font-size: 15px !important;
+  }
+}
